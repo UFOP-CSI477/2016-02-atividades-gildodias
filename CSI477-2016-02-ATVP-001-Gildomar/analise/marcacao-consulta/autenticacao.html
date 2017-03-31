@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Marcar Consulta</title>
+    <link rel="stylesheet" type="text/css" href="../css/autenticacao.css" />
+    <script src="../javascript/funcoes.js"></script>
+</head>
+<body>
+
+    <!-- Cabeçalho: Menu e área de login -->
+    
+	<div id="interface">
+		<header>
+			<nav id="menu">
+
+				<ul>
+					 
+                <li><a href="index.html">ADMINISTRADOR</a></li>
+                <li><a href="../marcacao-consulta/autenticacao.html">PACIENTE</a></li>
+                <li><a href="../marcacao-procedimentos/procedimentos.html">VISUALIZAR PROCEDIMENTOS</a></li>
+                </ul>
+			</nav>
+			<img src="../imagens/1.gif" id="logo" />
+		</header>
+	</div>
+    
+    <!-- Subtítulo -->
+    
+	<h4 id="agendamento">Agendamento</h4>
+	<hr>	
+
+	<!-- Campos de usuario e senha para autenticação do usuário dentro do sistema. Se for válido, ele poderá marcar consultas -->
+    
+    <span id="corpo">
+        <div id="marcar">
+
+            <h4>SOLICITAÇÃO DE EXAME - AUTENTICAÇÃO</h4>
+            
+            <hr>
+            
+            <p>Para acessar o sistema de solicitação de exame faça login.</p>
+
+
+            <form method="post" action="../loginConsulta.php">
+                <p> <label>USUÁRIO:</label> </p>
+                <p><input type="text" name="usuario" id="usuario" class="txtusuario" placeholder="usuario" required/> <br/></p>
+                <p><label>SENHA:</label></p>
+                <p><input type="password" name="senha" id="senha" class="txtconsulta" placeholder="informe a sua senha" required />    <p>
+                <input type="submit" name="botao" id="botao" value="entrar" onclick="validarLoginConsulta();"/><input type="button" name="botao2" id="botao2" value="esqueci a senha" />
+                </p>
+            </form>
+        </div>
+    </span>
+
+	<!-- Rodapé presente em algumas páginas -->
+
+	 <footer id="rodape">
+            <hr>
+            <div id="institucional">
+                <h4>INSTITUCIONAL</h4>
+                <ul type="none">
+                    <li><a href="#">UFOP - Universidade Federal de Ouro Preto</a></li>
+                    <li><a href="#">Curso: Sistemas de Informação</a></li>
+                    
+                </ul>
+            </div>
+
+            <div id="aluno">
+                <h4>ALUNO</h4>
+                
+                <p>
+                    Gildomar Gonçalves Dias
+                    <br /> 
+                    Matricula: 14.2.8596
+                    <br />
+                </p>
+
+                
+            </div>
+
+        </footer>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8"/>
+    <title>Procedimentos</title>
+    <link rel="stylesheet" type="text/css" href="../css/procedimentos.css"/>
+    <script src="javascript/funcoes.js"></script>
+</head>
+<body>
+    
+<!-- Cabeçãlho: menu e campos de usuario e senha -->
+    
+<div id="interface">
+    <header>
+    <nav id="menu">
+        
+        <ul>            
+            <li><a href="index.html">ADMINISTRADOR</a></li>
+            <li><a href="../marcacao-consulta/autenticacao.html">PACIENTE</a></li>
+            <li><a href="../marcacao-procedimentos/procedimentos.html">VISUALIZAR PROCEDIMENTOS</a></li>
+            </ul>
+    </nav>
+        
+    <img src="../imagens/1.gif" id="logo" />    
+        
+        <form action="../php/login.php" method="post" id="colaborador">
+            <fieldset>
+                <label for="usuario" id="area"><br/>Área restrita para<br/>&nbsp;&nbsp;colaboradores</label>
+                <input type="text" name="usuario" id="usuario" class="txtusuario" placeholder="usuario" required />
+                <input type="password" name="senha" id="senha" class="txtusuario" placeholder="senha" required />
+                <input type="submit" name="logar" id="logar" id="txtusuario" value="entrar" onclick="validarLogin();" />
+                <a href="cadastro-medico/cadastro-medico_login.html" id="cadastrar" name="cadastrar" class="txtusuario">Cadastre-se</a>
+            </fieldset>
+        </form>        
+    </header>
+</div>    
+    
+<!-- Subtítulo -->    
+    
+<h4>Procedimentos</h4><hr>      
+    
+    
+    
+    <p id="secao">O sistema de solicitações disponibiliza os seguintes exames.</p> 
+
+       
+    <ul id="procedimentos">
+         <p>
+ NOME                           PREÇO<br/>
+GLICEMIA	                    10.00<br/>	
+HIDROXIVITAMINA D       	    15.00<br/>	
+PROTEINAS TOTAIS	            45.00<br/>	
+DENGUE	                        22.00<br/>	
+BETA HCG QUANTITATIVO    	    18.00<br/>	
+HEMOGRAMA	                    12.00<br/>	
+VITAMINA K              	    45.00<br/>	
+COLESTEROL TOTAL	            15.00<br/>	
+GRUPO SANGUINEO + FATOR RH	    10.00<br/>	
+HORMONIO DE CRESCIMENTO (GH)	45.00<br/>	
+			  
+        </p>
+    </ul>
+    
+<!-- Rodapé presente em algumas páginas -->    
+    
+<footer id="rodape">
+            <hr>
+            <div id="institucional">
+                <h4>INSTITUCIONAL</h4>
+                <ul type="none">
+                    <li><a href="#">UFOP - Universidade Federal de Ouro Preto</a></li>
+                    <li><a href="#">Curso: Sistemas de Informação</a></li>
+                    
+                </ul>
+            </div>
+
+            <div id="aluno">
+                <h4>ALUNO</h4>
+                
+                <p>
+                    Gildomar Gonçalves Dias
+                    <br /> 
+                    Matricula: 14.2.8596
+                    <br />
+                </p>
+
+                
+            </div>
+
+        </footer>        
+</body>    
+</html>    

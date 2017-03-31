@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <script src="javascript/funcoes.js"></script>
+</head>
+    
+<body>
+	
+    <!-- Menu e campos de login -->
+
+            <div id="interface">
+                <header>
+                    <nav id="menu">
+                        <div class="nav-collapse">  
+                            <ul class="nav">
+                                <li><a href="index.html">ADMINISTRADOR</a></li>
+                                <li><a href="marcacao-consulta/autenticacao.html">PACIENTE</a></li>
+                                <li><a href="marcacao-procedimentos/procedimentos.html">VISUALIZAR PROCEDIMENTOS</a></li>
+                            </ul>
+                        </div>    
+                    </nav>
+                    
+                    <img src="imagens/1.gif" id="logo" />
+
+                    <form action="php/login.php" method="post" id="colaborador">
+                        <fieldset>
+                            <label for="usuario" id="area"><br />Área restrita para<br />&nbsp;&nbsp;colaboradores</label>
+                            <input type="text" name="usuario" id="usuario" class="txtusuario" placeholder="usuario" required/> 
+                            <input type="password" name="senha" id="senha" class="txtusuario" placeholder="senha" required/>
+                            <input type="submit" name="logar" id="logar" id="txtusuario" value="entrar" onclick="validarLogin();"/>
+                            <a href="cadastro-medico/cadastro-medico_login.html" id="cadastrar" name="cadastrar" class="txtusuario">Cadastre-se</a>
+                        </fieldset>
+                    </form>
+                </header>
+            </div>    
+        
+        <!-- Imagem de um médico e dois pequenos parágrafos -->
+
+        <div id="corpo">
+            <p>
+                Sistema de Controle de Solicitações de Análises Laboratorias
+            <br /> 
+            </p>
+            
+        </div>
+
+        <!-- Rodapé presente em algumas páginas -->
+
+        <footer id="rodape">
+            <hr>
+            <div id="institucional">
+                <h4>INSTITUCIONAL</h4>
+                <ul type="none">
+                    <li><a href="#">UFOP - Universidade Federal de Ouro Preto</a></li>
+                    <li><a href="#">Curso: Sistemas de Informação</a></li>
+                    
+                </ul>
+            </div>
+
+            <div id="aluno">
+                <h4>ALUNO</h4>
+                
+                <p>
+                    Gildomar Gonçalves Dias
+                    <br /> 
+                    Matricula: 14.2.8596
+                    <br />
+                </p>
+
+                
+            </div>
+
+        </footer>
+        </div>
+</body>
+</html>
