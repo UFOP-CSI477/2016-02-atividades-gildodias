@@ -1,0 +1,186 @@
+.hamburger-menu-close-button {
+	display: none
+}
+#imSite {
+	position: relative
+}
+#imMnMn {
+	text-align: left
+}
+#imMnMn > ul {
+	z-index: 10001;
+	display: inline-block
+}
+#imMnMn li > ul, #imMnMn li > div {
+	z-index: 10002
+}
+#imMnMn ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none
+}
+#imMnMn > ul {
+	margin-left: 0
+}
+#imMnMn > ul > li {
+	position: relative;
+	margin-top: 6px
+}
+#imMnMn > ul > li:first-child {
+	margin-top: 0
+}
+#imMnMn > ul > li {
+	cursor: pointer;
+	display: block;
+	float: left
+}
+#imMnMn > ul > li > a {
+	display: block
+}
+#imMnMn > ul > li .imMnMnFirstBg {
+	background-image: url('../menu/ver_main.png');
+	width: 143px;
+	height: 40px
+}
+#imMnMn > ul > li:hover .imMnMnFirstBg, #imMnMn > ul > li.imMnMnCurrent:hover .imMnMnFirstBg {
+	background-image: url('../menu/ver_main_h.png')
+}
+#imMnMn > ul > li.imMnMnSeparator .imMnMnFirstBg {
+	background-image: none;
+	cursor: auto
+}
+#imMnMn > ul > li.imMnMnCurrent .imMnMnFirstBg {
+	background-image: url('../menu/ver_main_c.png');
+	cursor: auto
+}
+#imMnMn > ul > li .imMnMnFirstBg .imMnMnImg, #imMnMn > ul > li:hover .imMnMnFirstBg .imMnMnImg {
+	overflow: hidden;
+	position: absolute;
+	line-height: 40px;
+	width: 100%;
+	height: 40px;
+	top: 0;
+	left: 0;
+	text-align: left
+}
+#imMnMn > ul > li .imMnMnFirstBg .imMnMnImg img, #imMnMn > ul > li:hover .imMnMnFirstBg .imMnMnImg img {
+	border: none
+}
+#imMnMn > ul > li .imMnMnFirstBg .imMnMnLevelImg, #imMnMn > ul > li:hover .imMnMnFirstBg .imMnMnLevelImg {
+	display: block;
+	position: absolute;
+	top: 0;
+	height: 40px;
+	line-height: 40px;
+	width: 10px;
+	vertical-align: middle;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-image: url('../res/imIconMenuLeft.gif');
+	right: 2px
+}
+#imMnMn > ul > li .imMnMnFirstBg .imMnMnHoverIcon {
+	display: none
+}
+#imMnMn > ul > li:hover .imMnMnFirstBg .imMnMnDefaultIcon {
+	display: none
+}
+#imMnMn > ul > li:hover .imMnMnFirstBg .imMnMnHoverIcon {
+	display: inline
+}
+#imMnMn > ul > li.imMnMnSeparator > .imMnMnFirstBg > .imMnMnTxt {
+	display: none
+}
+#imMnMn > ul > li > a {
+	text-decoration: none
+}
+#imMnMn > ul > li .imMnMnFirstBg > .imMnMnTxt {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	width: 136px;
+	height: 40px;
+	font: normal normal normal 11pt 'Segoe UI Light';
+	color: #BF8F00;
+	text-align: center;
+	text-decoration: none;
+	line-height: 40px;
+	display: block
+}
+#imMnMn > ul > li:hover .imMnMnFirstBg > .imMnMnTxt, #imMnMn > ul > li.imMnMnCurrent:hover .imMnMnFirstBg > .imMnMnTxt {
+	cursor: pointer;
+	color: #D8FEE4;
+	font-weight: normal;
+	font-style: normal
+}
+#imMnMn > ul > li.imMnMnCurrent .imMnMnFirstBg > .imMnMnTxt {
+	color: #FFFFFF;
+	font-weight: normal;
+	font-style: normal
+}
+#imMnMn > ul > li.imMnMnSeparator {
+	background: transparent url('../res/separatorv.png') no-repeat center center;
+	width: 143px;
+	height: 10px
+}
+#imMnMn .imMnMnFirstBg {
+	position: relative;
+	display: block;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	width: 100%
+}
+#imMnMn a {
+	border: none;
+	cursor: pointer
+}
+#imMnMn .imMnMnTxt {
+	text-overflow: ellipsis;
+	white-space: nowrap
+}
+#imMnMn .imMnMnTxt .imMnMnTextLabel {
+	position: relative
+}
+#imMnMn .imMnMnTxt .imMnMnTextLabel {
+	word-wrap: normal;
+	white-space: normal;
+	line-height: normal;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: -3px
+}
+#imMnMn .imMnMnFirstBg .imMnMnImg {
+	display: block;
+	height: 40px;
+	width: 143px;
+	cursor: pointer
+}
+#imMnMn .imMnMnFirstBg .imMnMnImg img {
+	position: absolute
+}
+#imMnMn ul .autoHide, #imMnMn ul div .autoHide {
+	display: none
+}
+#imMnMn {
+	z-index: 10000
+}
+#imMnMn > ul {
+	position: relative
+}
+#imMnMn > ul > li > ul {
+	position: absolute
+}
+#imMnMn > ul > li {
+	width: 143px
+}
+#imMnMn > ul > li span {
+	display: block;
+	padding: 0
+}
+#imMnMn a {
+	display: block;
+	width: 143px
+}
+#imMnMn ul ul li .imMnMnBorder {
+	overflow: hidden
+}
